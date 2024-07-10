@@ -1,0 +1,17 @@
+Name,Latitude,Longitude,Class,Location,Radius
+Downtown Manhattan Heliport,40.70152416,-74.00907722,Tour,Manhattan,1000
+East 34th Street Heliport,40.74235378,-73.9720595,Tour,Manhattan,900
+West 30th Street Heliport,40.75483796,-74.00717743,Tour,Manhattan,1100
+LaGuardia Airport,40.77344541,-73.88247392,Airport,Queens,1800
+NYPD Floyd Bennett Field,40.592436,-73.89250132,NYPD,Brooklyn,2000
+Fort Hamilton,40.6059447,-74.01985089,Military,Brooklyn,1600
+"Kearny, NJ",40.72589633,-74.11086601,Tour,NJ,2400
+Linden Airport,40.61599281,-74.24480629,Tour,NJ,1300
+Newark Airport,40.690829,-74.17587,Airport,NJ,2100
+Teterboro Airport,40.849247,-74.061799,Airport,NJ,1800
+Essex County Airport,40.873318,-74.281732,Airport,NJ,2500
+Morristown Airport,40.797423,-74.415736,Airport,NJ,1300
+Hackensack Univ Medical Center,40.883615,-74.056079,Hospital,NJ,400
+JFK Airport,40.646695,-73.782048,Airport,Queens,4000
+Staten Island Univ Hospital,40.58509193,-74.08561286,Hospital,Staten Island,400
+Westchester County Airport,41.06983235, -73.70821142,Tour,Westchester,4000
