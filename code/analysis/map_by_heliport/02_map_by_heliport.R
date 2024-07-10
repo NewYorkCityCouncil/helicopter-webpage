@@ -40,6 +40,20 @@ councildown::mapshot(map_all_flights, file = "visuals/all_flights/all_flights.pn
                      vwidth = 900, vheight = 870)
 htmlwidgets::saveWidget(map_all_flights, file="visuals/all_flights/all_flights.html", selfcontained = T)
  
+# map all flights (sample)
+map_sample_flights <- leaflet(options = leafletOptions(minZoom = 10, maxZoom = 15))%>%
+  setView(-73.999,40.704103, zoom=11) %>% 
+  addProviderTiles('CartoDB.Positron') %>%
+  leaflet::addPolygons(data = heliport_df %>% filter(!(name %in% c("Hackensack Univ Medical Center", "Staten Island Univ Hospital"))),
+                       fill = FALSE,
+                       opacity = 0.8,
+                       color = "#666666") %>%
+  addPolylines(data=flights %>% sample_frac(0.1), opacity = 0.05, color = "#2F56A6")
+
+councildown::mapshot(map_sample_flights, file = "visuals/all_flights/sample_flights.png", 
+                     vwidth = 900, vheight = 870)
+htmlwidgets::saveWidget(map_sample_flights, file="visuals/all_flights/sample_flights.html", selfcontained = T)
+
 
 # function to map each heliport
 flight_by_heliport_map<- function(
