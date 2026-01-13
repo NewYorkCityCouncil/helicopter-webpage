@@ -56,6 +56,10 @@ flights <- flight_summary %>%
       )
     ) 
 
+flights %>%
+# write_csv(glue("data/output/wrangle_flights_flight_data.csv"))
+write_parquet(flights, "data/output/wrangle_flights_flight_data.parquet")
+
 # classify flights as tours, commuter/other, or nypd
 flights <- flights %>%
   mutate(
